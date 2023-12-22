@@ -58,12 +58,13 @@ int main(){
     char character;
     cin>>pos;
     cin>>character;
-    for(int i=size;i<pos;i--){
+    for(int i=size;i>pos;i--){
         arr[i]=arr[i- 1];
     }
     arr[pos]=character;
+    size++;
     cout<<"Updated array after insertion: ";
-    for(int i=0;i<size;i++){
+    for(int i=0;i<=size;i++){
         cout<<arr[i]<<" ";
     }
     
