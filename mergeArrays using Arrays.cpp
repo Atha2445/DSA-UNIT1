@@ -91,3 +91,31 @@ int main() {
 
     return 0;
 }
+
+
+///////////////////////       METHOD --  2    ////////////////////////
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n,m,i,k;
+    int arr1[50],arr2[50],arr3[100];
+    
+    cin>>n;
+    for(i=0;i<n;i++){
+        cin>>arr1[i];
+        arr3[i]=arr1[i];
+    }
+    k=i;
+    cin>>m;
+    for(i=0;i<m;i++){
+        cin>>arr2[i];
+        arr3[k]=arr2[i];
+        k++;
+    }
+    for(i=0;i<k;i++){
+        cout<<arr3[i]<<" ";
+    }
+    return 0;
+}
